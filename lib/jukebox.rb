@@ -27,7 +27,7 @@ def list(songs)
 end
 
 def play(songs)
-  choice = 2
+  choice = gets.chomp
   e = songs.size
   if songs.include?(choice) == false || (1..e).include?(choice.to_i) == false
     puts "Invalid input, please try again"
@@ -39,8 +39,6 @@ def play(songs)
     num = choice.to_i-1
     puts "Playing #{songs[num]}"
   end
-
-
 end
 
 def exit_jukebox
