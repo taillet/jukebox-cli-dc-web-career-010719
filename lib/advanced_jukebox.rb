@@ -38,7 +38,7 @@ def play(my_songs)
     end
     if my_songs.include?(choice) == true
       filename = my_songs[choice]
-      system "open #{filename}"
+      puts "open #{filename}"
     end
 
 end
